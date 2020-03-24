@@ -4,17 +4,17 @@
 Fedora Core image is downloaded. [CoreOS](https://getfedora.org/coreos/download/)
 
 Mount the iso file to the server and run the machine.
-![image](https://user-images.githubusercontent.com/3519706/77246525-50a2be80-6c39-11ea-85cb-ed5a3d57fd9d.png)
+![https://github.com/OktaySavdi/CoreOS/blob/master/install_Fedora_CoreOS](https://user-images.githubusercontent.com/3519706/77246525-50a2be80-6c39-11ea-85cb-ed5a3d57fd9d.png)
 
 When you see Fedora CoreOS (Live) screen press the `TAB` button and fill the section ip with your own information
 
     ip=10.10.10.10::10.10.10.254:255.255.255.0:master.local:eth0:none nameserver=10.10.10.01
 
-![image](https://user-images.githubusercontent.com/3519706/77046450-12f12c00-69d4-11ea-9ff7-412336b40224.png)
+![https://github.com/OktaySavdi/CoreOS/blob/master/install_Fedora_CoreOS](https://user-images.githubusercontent.com/3519706/77046450-12f12c00-69d4-11ea-9ff7-412336b40224.png)
 
 the installation step will start
 
-![image](https://user-images.githubusercontent.com/3519706/77046594-53e94080-69d4-11ea-9356-63fd24341269.png)
+![https://github.com/OktaySavdi/CoreOS/blob/master/install_Fedora_CoreOS](https://user-images.githubusercontent.com/3519706/77046594-53e94080-69d4-11ea-9356-63fd24341269.png)
 
 Necessary checks are made, 
 
@@ -22,10 +22,10 @@ Necessary checks are made,
 - The machine can access the internet
 
 The machine receives IP, 
-![image](https://user-images.githubusercontent.com/3519706/77246597-12f26580-6c3a-11ea-8c92-1e06fd2cfcc1.png)
+![https://github.com/OktaySavdi/CoreOS/blob/master/install_Fedora_CoreOS](https://user-images.githubusercontent.com/3519706/77246597-12f26580-6c3a-11ea-8c92-1e06fd2cfcc1.png)
 
 It is checked whether there is internet access with the command `curl www.google.com`.
-![image](https://user-images.githubusercontent.com/3519706/77056521-9108ff00-69e3-11ea-8296-483bc1b808f4.png)
+![https://github.com/OktaySavdi/CoreOS/blob/master/install_Fedora_CoreOS](https://user-images.githubusercontent.com/3519706/77056521-9108ff00-69e3-11ea-8296-483bc1b808f4.png)
 
 If the machine cannot access the internet (dns address) or not received a ip, method, dns and gateway assignments can be made with the following commands.
 
@@ -48,10 +48,10 @@ sudo openssl passwd -1 > cloud-config-file # password_hash is added in config.fc
 Password is entered.
 
 Password hash information is obtained with the command `cat cloud-config-file`.
-![image](https://user-images.githubusercontent.com/3519706/77246641-6c5a9480-6c3a-11ea-97fd-d74a7363e3fc.png)
+![https://github.com/OktaySavdi/CoreOS/blob/master/install_Fedora_CoreOS](https://user-images.githubusercontent.com/3519706/77246641-6c5a9480-6c3a-11ea-97fd-d74a7363e3fc.png)
 
 Public key is created for `ssh_authorized_keys` and saved to a safe location (I used 'PuTTYgen')
-![image](https://user-images.githubusercontent.com/3519706/77048325-48e3df80-69d7-11ea-8b4c-8dcf7e416e49.png)
+![https://github.com/OktaySavdi/CoreOS/blob/master/install_Fedora_CoreOS](https://user-images.githubusercontent.com/3519706/77048325-48e3df80-69d7-11ea-8b4c-8dcf7e416e49.png)
 
 The file `config.fcc` is created
 ```yaml
@@ -113,13 +113,13 @@ The disc is then ejected and the server is restarted.
 
 wait for dhcp discover for timeout
 
-![image](https://user-images.githubusercontent.com/3519706/77055189-864d6a80-69e1-11ea-85c7-ab8e235dde1a.png)
+![https://github.com/OktaySavdi/CoreOS/blob/master/install_Fedora_CoreOS](https://user-images.githubusercontent.com/3519706/77055189-864d6a80-69e1-11ea-85c7-ab8e235dde1a.png)
 
 The operating system will be turned on in a few minutes.
 
 You can login with the user you have defined.
 
-![image](https://user-images.githubusercontent.com/3519706/77246483-bb9fc580-6c38-11ea-86dc-d59294c61942.png)
+![https://github.com/OktaySavdi/CoreOS/blob/master/install_Fedora_CoreOS](https://user-images.githubusercontent.com/3519706/77246483-bb9fc580-6c38-11ea-86dc-d59294c61942.png)
 
 Internet access is checked again with `curl www.google.com`
 
@@ -140,6 +140,6 @@ To connect CoreOS as a remote to putty
 
 Connection> SSH> Auth Private Key is added
 
-![image](https://user-images.githubusercontent.com/3519706/77055456-f78d1d80-69e1-11ea-9b25-ac643784ccc8.png)
+![https://github.com/OktaySavdi/CoreOS/blob/master/install_Fedora_CoreOS](https://user-images.githubusercontent.com/3519706/77055456-f78d1d80-69e1-11ea-9b25-ac643784ccc8.png)
 
-![image](https://user-images.githubusercontent.com/3519706/77055516-155a8280-69e2-11ea-811c-e758c776222f.png)
+![https://github.com/OktaySavdi/CoreOS/blob/master/install_Fedora_CoreOS](https://user-images.githubusercontent.com/3519706/77055516-155a8280-69e2-11ea-811c-e758c776222f.png)
